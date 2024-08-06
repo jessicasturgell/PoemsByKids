@@ -145,8 +145,8 @@ JOIN Emotion e
 ON pe.EmotionId = e.Id
 JOIN Author a
 ON p.AuthorId = a.Id
-JOIN Grade g
-ON g.Id = a.GradeId
+JOIN Gender g
+ON g.Id = a.GenderId
 WHERE e.Name = 'Fear'
 GROUP BY g.Name
 ORDER BY COUNT(e.Id);
